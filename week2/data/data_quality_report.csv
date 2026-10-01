@@ -1,0 +1,12 @@
+Issue,Column(s),Rows affected,Share of data %,Action
+Extra spaces at the end of text labels,"Traffic, Vehicle, Area",43739,100.0,Strip whitespace from all text columns
+"Missing values stored as the text ""NaN""","Traffic, Order_Time",91,0.21,Convert to real missing values
+Misspelt label 'Metropolitian',Area,32698,74.76,Correct the spelling to 'Metropolitan'
+"Corrupted records (weather, traffic and order time all missing)","Weather, Traffic, Order_Time",91,0.21,Remove the records
+"Impossible agent age (15, below working age)",Agent_Age,38,0.09,Removed with the corrupted records
+Impossible rating (6.0 on a 5-point scale),Agent_Rating,53,0.12,Removed with the corrupted records
+Missing agent rating,Agent_Rating,54,0.12,Fill with the median rating
+Pickup time earlier than order time (pickup after midnight),Pickup_Time,828,1.89,"Add one day to the pickup (not an error, order at 23:xx and pickup at 00:xx)"
+Negative store coordinates (sign error),"Store_Latitude, Store_Longitude",156,0.36,Repair: take the absolute value (checked against drop location)
+Store coordinates equal to 0 (placeholder),"Store_Latitude, Store_Longitude",3495,7.99,Remove the records (cannot be repaired)
+Long delivery times flagged by the IQR rule (above 265 min),Delivery_Time,74,0.17,"Keep (valid values, target variable), add a flag column"
