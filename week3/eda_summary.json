@@ -1,0 +1,963 @@
+{
+ "rows": 40153,
+ "days": 44,
+ "sla": 150,
+ "sla_sensitivity": {
+  "120": 48.6,
+  "150": 72.0,
+  "180": 85.3
+ },
+ "kpi": {
+  "on_time_rate": 72.0,
+  "avg_delivery_time": 125.1,
+  "median_delivery_time": 125.0,
+  "avg_est_cost": 219.0,
+  "orders_per_day": 912.6,
+  "rider_hours_total": 83703
+ },
+ "cost_share_rider_pct": 85.7,
+ "describe": {
+  "Delivery_Time": {
+   "mean": 125.08,
+   "median": 125.0,
+   "std": 51.92,
+   "min": 10.0,
+   "max": 270.0,
+   "skew": 0.18,
+   "mode": 130.0,
+   "cv_pct": 41.51
+  },
+  "distance_km": {
+   "mean": 9.71,
+   "median": 9.19,
+   "std": 5.6,
+   "min": 1.47,
+   "max": 20.97,
+   "skew": 0.32,
+   "mode": 12.0,
+   "cv_pct": 57.62
+  },
+  "prep_minutes": {
+   "mean": 9.98,
+   "median": 10.0,
+   "std": 4.09,
+   "min": 5.0,
+   "max": 15.0,
+   "skew": 0.01,
+   "mode": 5.0,
+   "cv_pct": 40.94
+  },
+  "Agent_Age": {
+   "mean": 29.55,
+   "median": 30.0,
+   "std": 5.76,
+   "min": 20.0,
+   "max": 39.0,
+   "skew": -0.01,
+   "mode": 35.0,
+   "cv_pct": 19.49
+  },
+  "Agent_Rating": {
+   "mean": 4.63,
+   "median": 4.7,
+   "std": 0.31,
+   "min": 2.5,
+   "max": 5.0,
+   "skew": -1.79,
+   "mode": 5.0,
+   "cv_pct": 6.79
+  },
+  "est_cost": {
+   "mean": 219.0,
+   "median": 214.4,
+   "std": 85.8,
+   "min": 20.23,
+   "max": 517.52,
+   "skew": 0.28,
+   "mode": 214.0,
+   "cv_pct": 39.18
+  }
+ },
+ "kurtosis_delivery": -0.26,
+ "grocery": {
+  "orders": 2454,
+  "share_pct": 6.1,
+  "mean": 26.5,
+  "median": 26.0,
+  "max": 54,
+  "on_time_pct": 100.0
+ },
+ "non_grocery": {
+  "orders": 37699,
+  "mean": 131.5,
+  "median": 130.0,
+  "std": 46.8,
+  "on_time_pct": 70.1
+ },
+ "category_mean_range_non_grocery": [
+  129.4,
+  133.0
+ ],
+ "category_volume_range": [
+  2432,
+  2620
+ ],
+ "by_traffic": {
+  "Low": {
+   "orders": 13758,
+   "avg_time": 101.4,
+   "median_time": 100.0,
+   "on_time_pct": 92.4,
+   "avg_cost": 178.5,
+   "avg_distance": 8.1
+  },
+  "Medium": {
+   "orders": 9788,
+   "avg_time": 127.0,
+   "median_time": 130.0,
+   "on_time_pct": 69.5,
+   "avg_cost": 226.3,
+   "avg_distance": 11.1
+  },
+  "High": {
+   "orders": 3950,
+   "avg_time": 129.5,
+   "median_time": 135.0,
+   "on_time_pct": 68.6,
+   "avg_cost": 208.3,
+   "avg_distance": 4.4
+  },
+  "Jam": {
+   "orders": 12657,
+   "avg_time": 147.9,
+   "median_time": 150.0,
+   "on_time_pct": 52.7,
+   "avg_cost": 260.8,
+   "avg_distance": 12.0
+  }
+ },
+ "by_weather": {
+  "Cloudy": {
+   "orders": 6700,
+   "avg_time": 138.3,
+   "median_time": 140.0,
+   "on_time_pct": 58.5,
+   "avg_cost": 239.0,
+   "avg_distance": 9.8
+  },
+  "Fog": {
+   "orders": 6809,
+   "avg_time": 136.9,
+   "median_time": 135.0,
+   "on_time_pct": 58.8,
+   "avg_cost": 237.0,
+   "avg_distance": 9.8
+  },
+  "Sandstorms": {
+   "orders": 6682,
+   "avg_time": 123.3,
+   "median_time": 125.0,
+   "on_time_pct": 75.7,
+   "avg_cost": 216.0,
+   "avg_distance": 9.7
+  },
+  "Stormy": {
+   "orders": 6779,
+   "avg_time": 123.4,
+   "median_time": 125.0,
+   "on_time_pct": 75.7,
+   "avg_cost": 216.6,
+   "avg_distance": 9.7
+  },
+  "Sunny": {
+   "orders": 6534,
+   "avg_time": 103.9,
+   "median_time": 100.0,
+   "on_time_pct": 88.3,
+   "avg_cost": 186.9,
+   "avg_distance": 9.6
+  },
+  "Windy": {
+   "orders": 6649,
+   "avg_time": 123.9,
+   "median_time": 125.0,
+   "on_time_pct": 75.3,
+   "avg_cost": 217.3,
+   "avg_distance": 9.7
+  }
+ },
+ "by_vehicle": {
+  "Motorcycle": {
+   "orders": 23555,
+   "avg_time": 131.1,
+   "median_time": 130.0,
+   "on_time_pct": 68.3,
+   "avg_cost": 225.7,
+   "avg_distance": 9.7
+  },
+  "Scooter": {
+   "orders": 13404,
+   "avg_time": 116.6,
+   "median_time": 115.0,
+   "on_time_pct": 77.0,
+   "avg_cost": 199.3,
+   "avg_distance": 9.8
+  },
+  "Van": {
+   "orders": 3194,
+   "avg_time": 116.1,
+   "median_time": 115.0,
+   "on_time_pct": 78.0,
+   "avg_cost": 251.9,
+   "avg_distance": 9.7
+  }
+ },
+ "by_area": {
+  "Metropolitan": {
+   "orders": 30063,
+   "avg_time": 129.8,
+   "median_time": 130.0,
+   "on_time_pct": 68.7,
+   "avg_cost": 226.8,
+   "avg_distance": 9.9
+  },
+  "Other": {
+   "orders": 1051,
+   "avg_time": 104.5,
+   "median_time": 100.0,
+   "on_time_pct": 85.3,
+   "avg_cost": 185.8,
+   "avg_distance": 9.2
+  },
+  "Semi-Urban": {
+   "orders": 138,
+   "avg_time": 238.7,
+   "median_time": 245.0,
+   "on_time_pct": 5.1,
+   "avg_cost": 397.4,
+   "avg_distance": 12.8
+  },
+  "Urban": {
+   "orders": 8901,
+   "avg_time": 109.7,
+   "median_time": 105.0,
+   "on_time_pct": 82.4,
+   "avg_cost": 193.8,
+   "avg_distance": 9.1
+  }
+ },
+ "by_part_of_day": {
+  "Afternoon": {
+   "orders": 3698,
+   "avg_time": 122.1,
+   "median_time": 125.0,
+   "on_time_pct": 75.1,
+   "avg_cost": 202.4,
+   "avg_distance": 5.9
+  },
+  "Evening": {
+   "orders": 29003,
+   "avg_time": 131.5,
+   "median_time": 130.0,
+   "on_time_pct": 66.6,
+   "avg_cost": 236.0,
+   "avg_distance": 12.0
+  },
+  "Morning": {
+   "orders": 7057,
+   "avg_time": 101.3,
+   "median_time": 100.0,
+   "on_time_pct": 91.2,
+   "avg_cost": 159.3,
+   "avg_distance": 2.3
+  },
+  "Night": {
+   "orders": 395,
+   "avg_time": 102.9,
+   "median_time": 100.0,
+   "on_time_pct": 92.2,
+   "avg_cost": 192.2,
+   "avg_distance": 11.5
+  }
+ },
+ "effects_all": {
+  "Category": {
+   "eta_sq": 0.235,
+   "F": 822.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Traffic": {
+   "eta_sq": 0.133,
+   "F": 2055.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "hour": {
+   "eta_sq": 0.136,
+   "F": 394.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Weather": {
+   "eta_sq": 0.047,
+   "F": 397.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Area": {
+   "eta_sq": 0.046,
+   "F": 651.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "part_of_day": {
+   "eta_sq": 0.05,
+   "F": 708.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Vehicle": {
+   "eta_sq": 0.019,
+   "F": 393.0,
+   "p_anova": 1.441391953256605e-169,
+   "p_kruskal": 1.3167281606972063e-156
+  },
+  "is_weekend": {
+   "eta_sq": 0.0,
+   "F": 0.0,
+   "p_anova": 0.6778354334293643,
+   "p_kruskal": 0.6002202642551551
+  }
+ },
+ "effects_non_grocery": {
+  "Traffic": {
+   "eta_sq": 0.183,
+   "F": 2823.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Weather": {
+   "eta_sq": 0.064,
+   "F": 511.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Area": {
+   "eta_sq": 0.063,
+   "F": 845.0,
+   "p_anova": 0.0,
+   "p_kruskal": 0.0
+  },
+  "Vehicle": {
+   "eta_sq": 0.026,
+   "F": 510.0,
+   "p_anova": 2.2532992492630407e-219,
+   "p_kruskal": 7.926494218751774e-190
+  },
+  "Category": {
+   "eta_sq": 0.0,
+   "F": 1.0,
+   "p_anova": 0.41458898027691127,
+   "p_kruskal": 0.16832316338978492
+  }
+ },
+ "weather_ci": {
+  "Cloudy": 1.3,
+  "Fog": 1.4,
+  "Sandstorms": 1.2,
+  "Stormy": 1.1,
+  "Sunny": 1.1,
+  "Windy": 1.2
+ },
+ "traffic_x_area": {
+  "Low": {
+   "Metropolitan": 105.0,
+   "Other": 92.0,
+   "Semi-Urban": null,
+   "Urban": 92.0
+  },
+  "Medium": {
+   "Metropolitan": 131.0,
+   "Other": 112.0,
+   "Semi-Urban": 202.0,
+   "Urban": 112.0
+  },
+  "High": {
+   "Metropolitan": 133.0,
+   "Other": 112.0,
+   "Semi-Urban": 250.0,
+   "Urban": 115.0
+  },
+  "Jam": {
+   "Metropolitan": 151.0,
+   "Other": 118.0,
+   "Semi-Urban": 241.0,
+   "Urban": 133.0
+  }
+ },
+ "traffic_x_vehicle": {
+  "Low": {
+   "Motorcycle": 106.0,
+   "Scooter": 95.0,
+   "Van": 95.0
+  },
+  "Medium": {
+   "Motorcycle": 133.0,
+   "Scooter": 118.0,
+   "Van": 120.0
+  },
+  "High": {
+   "Motorcycle": 137.0,
+   "Scooter": 118.0,
+   "Van": 119.0
+  },
+  "Jam": {
+   "Motorcycle": 156.0,
+   "Scooter": 138.0,
+   "Van": 134.0
+  }
+ },
+ "motorcycle_gap_by_traffic": {
+  "Low": 10.6,
+  "Medium": 14.6,
+  "High": 19.3,
+  "Jam": 18.0
+ },
+ "semi_urban": {
+  "orders": 138,
+  "jam_share_pct": 82.6,
+  "avg_time": 238.7,
+  "on_time_pct": 5.1
+ },
+ "traffic_by_hour": {
+  "0": "Low",
+  "8": "Low",
+  "9": "Low",
+  "10": "Low",
+  "11": "High",
+  "12": "High",
+  "13": "High",
+  "14": "High",
+  "15": "Medium",
+  "16": "Medium",
+  "17": "Medium",
+  "18": "Medium",
+  "19": "Jam",
+  "20": "Jam",
+  "21": "Jam",
+  "22": "Low",
+  "23": "Low"
+ },
+ "traffic_hour_purity_pct": 97.8,
+ "weekend": {
+  "weekend": 124.9,
+  "weekday": 125.1,
+  "p": 0.6755841117747508
+ },
+ "rating_bands": {
+  "<=4.0": {
+   "count": 2073,
+   "mean": 180.5
+  },
+  "4.1-4.5": {
+   "count": 7782,
+   "mean": 152.8
+  },
+  "4.6-4.7": {
+   "count": 12186,
+   "mean": 121.9
+  },
+  "4.8-4.9": {
+   "count": 12232,
+   "mean": 120.3
+  },
+  "5.0": {
+   "count": 3426,
+   "mean": 127.5
+  }
+ },
+ "age_bands": {
+  "20-24": {
+   "count": 9319,
+   "mean": 115.1
+  },
+  "25-29": {
+   "count": 9356,
+   "mean": 115.1
+  },
+  "30-34": {
+   "count": 9430,
+   "mean": 147.9
+  },
+  "35-39": {
+   "count": 9594,
+   "mean": 147.2
+  }
+ },
+ "age_step": {
+  "age29": 114.8,
+  "age30": 145.3
+ },
+ "rating_low_share_pct": 5.6,
+ "store_areas": {
+  "count": 67,
+  "orders_min": 32,
+  "orders_median": 305,
+  "orders_max": 2749,
+  "time_min": 116.8,
+  "time_max": 136.1,
+  "time_std": 3.8,
+  "time_std_orders_ge_100": 3.2,
+  "areas_ge_100": 57,
+  "top5_share_pct": 30.5
+ },
+ "corr_pearson": {
+  "Delivery_Time": 1.0,
+  "distance_km": 0.28,
+  "Agent_Age": 0.26,
+  "Agent_Rating": -0.31,
+  "prep_minutes": -0.01,
+  "hour": 0.16,
+  "Traffic_code": 0.35,
+  "est_cost": 0.96
+ },
+ "corr_spearman": {
+  "Delivery_Time": 1.0,
+  "distance_km": 0.29,
+  "Agent_Age": 0.28,
+  "Agent_Rating": -0.26,
+  "prep_minutes": -0.01,
+  "hour": 0.09,
+  "Traffic_code": 0.37,
+  "est_cost": 0.96
+ },
+ "corr_non_grocery": {
+  "Delivery_Time": 1.0,
+  "distance_km": 0.32,
+  "Agent_Age": 0.3,
+  "Agent_Rating": -0.36,
+  "prep_minutes": -0.01
+ },
+ "distance_regression": {
+  "slope": 2.68,
+  "intercept": 105.4,
+  "r2": 0.103
+ },
+ "daily": {
+  "mean": 912.6,
+  "min": 682,
+  "max": 1067,
+  "missing_days": 11,
+  "avg_time_min": 107.6,
+  "avg_time_max": 144.6
+ },
+ "day_types": {
+  "All-day": {
+   "days": 22,
+   "orders": 984.0,
+   "avg_time": 110.7,
+   "on_time": 84.3,
+   "peak_pct": 49.6,
+   "jam_pct": 21.5
+  },
+  "Evening-only": {
+   "days": 22,
+   "orders": 841.0,
+   "avg_time": 142.0,
+   "on_time": 57.5,
+   "peak_pct": 98.8,
+   "jam_pct": 43.3
+  }
+ },
+ "alternation": {
+  "pairs": 41,
+  "alternating": 41
+ },
+ "orders_before_gap": {
+  "All-day": 756.0,
+  "Evening-only": 689.0
+ },
+ "orders_after_gap": {
+  "All-day": 1035.0,
+  "Evening-only": 875.0
+ },
+ "orders_per_day_overall": {
+  "before_gap": 723.0,
+  "after_gap": 955.0
+ },
+ "corr_daily_orders_vs_time": -0.63,
+ "weekday_orders": {
+  "0": 912,
+  "1": 935,
+  "2": 895,
+  "3": 934,
+  "4": 877,
+  "5": 927,
+  "6": 916
+ },
+ "phase_shift": {
+  "21_mar": "All-day",
+  "23_mar": "Evening-only"
+ },
+ "evening_orders_per_hour": {
+  "All-day": 70.0,
+  "Evening-only": 119.0
+ },
+ "peak_time_by_day_type": {
+  "All-day": 113.1,
+  "Evening-only": 142.4
+ },
+ "morning_share_by_day_type": {
+  "All-day": 32.6,
+  "Evening-only": 0.0
+ },
+ "hourly": {
+  "0": {
+   "orders": 395,
+   "avg_time": 102.9,
+   "on_time": 92.2
+  },
+  "8": {
+   "orders": 1670,
+   "avg_time": 93.1,
+   "on_time": 97.4
+  },
+  "9": {
+   "orders": 1781,
+   "avg_time": 92.6,
+   "on_time": 98.4
+  },
+  "10": {
+   "orders": 1813,
+   "avg_time": 93.1,
+   "on_time": 97.8
+  },
+  "11": {
+   "orders": 1793,
+   "avg_time": 125.8,
+   "on_time": 71.6
+  },
+  "12": {
+   "orders": 822,
+   "avg_time": 129.0,
+   "on_time": 69.3
+  },
+  "13": {
+   "orders": 715,
+   "avg_time": 131.8,
+   "on_time": 66.3
+  },
+  "14": {
+   "orders": 717,
+   "avg_time": 129.5,
+   "on_time": 69.5
+  },
+  "15": {
+   "orders": 798,
+   "avg_time": 109.8,
+   "on_time": 85.0
+  },
+  "16": {
+   "orders": 646,
+   "avg_time": 109.6,
+   "on_time": 86.4
+  },
+  "17": {
+   "orders": 3915,
+   "avg_time": 130.1,
+   "on_time": 66.2
+  },
+  "18": {
+   "orders": 4122,
+   "avg_time": 129.6,
+   "on_time": 67.2
+  },
+  "19": {
+   "orders": 4218,
+   "avg_time": 147.0,
+   "on_time": 53.5
+  },
+  "20": {
+   "orders": 4164,
+   "avg_time": 148.7,
+   "on_time": 52.1
+  },
+  "21": {
+   "orders": 4294,
+   "avg_time": 146.5,
+   "on_time": 53.8
+  },
+  "22": {
+   "orders": 4175,
+   "avg_time": 110.7,
+   "on_time": 85.9
+  },
+  "23": {
+   "orders": 4115,
+   "avg_time": 107.3,
+   "on_time": 88.3
+  }
+ },
+ "peak_vs_off": {
+  "peak_time": 131.5,
+  "off_time": 108.2,
+  "peak_orders_share": 72.2,
+  "peak_on_time": 66.6,
+  "off_on_time": 85.9
+ },
+ "acf": {
+  "1": -0.94,
+  "2": 0.89,
+  "3": -0.85,
+  "4": 0.8,
+  "5": -0.78,
+  "6": 0.73,
+  "7": -0.67,
+  "8": 0.6,
+  "9": -0.55,
+  "10": 0.5
+ },
+ "decomposition": {
+  "segment_days": 21,
+  "seasonal_amplitude": 78.0,
+  "trend_start": 966.0,
+  "trend_end": 959.0,
+  "resid_std": 8.9,
+  "series_std": 79.5,
+  "seasonal_explained_pct": 98.8,
+  "trend_slope_per_day": -0.3
+ },
+ "peak_by_day_type_traffic": {
+  "Low": {
+   "All-day": 93.0,
+   "Evening-only": 115.4
+  },
+  "Medium": {
+   "All-day": 109.1,
+   "Evening-only": 142.5
+  },
+  "Jam": {
+   "All-day": 128.5,
+   "Evening-only": 159.2
+  }
+ },
+ "peak_distance_by_day_type": {
+  "All-day": 7.1,
+  "Evening-only": 14.8
+ },
+ "distance_by_part_of_day": {
+  "Afternoon": 5.9,
+  "Evening": 12.0,
+  "Morning": 2.3,
+  "Night": 11.5
+ },
+ "peak_hour_range_by_day_type": {
+  "All-day": [
+   10.0,
+   270.0
+  ],
+  "Evening-only": [
+   10.0,
+   270.0
+  ]
+ },
+ "ols": {
+  "Traffic: Medium": {
+   "coef": 22.38,
+   "lo": 21.54,
+   "hi": 23.22,
+   "p": 0.0
+  },
+  "Traffic: High": {
+   "coef": 36.48,
+   "lo": 35.33,
+   "hi": 37.62,
+   "p": 0.0
+  },
+  "Traffic: Jam": {
+   "coef": 37.74,
+   "lo": 36.94,
+   "hi": 38.54,
+   "p": 0.0
+  },
+  "Weather: Cloudy": {
+   "coef": 32.38,
+   "lo": 31.3,
+   "hi": 33.45,
+   "p": 0.0
+  },
+  "Weather: Fog": {
+   "coef": 32.75,
+   "lo": 31.68,
+   "hi": 33.82,
+   "p": 0.0
+  },
+  "Weather: Sandstorms": {
+   "coef": 17.2,
+   "lo": 16.13,
+   "hi": 18.28,
+   "p": 1.1724015581206107e-213
+  },
+  "Weather: Stormy": {
+   "coef": 17.08,
+   "lo": 16.01,
+   "hi": 18.15,
+   "p": 3.938848646270476e-212
+  },
+  "Weather: Windy": {
+   "coef": 17.91,
+   "lo": 16.84,
+   "hi": 18.99,
+   "p": 9.37279597637309e-231
+  },
+  "Vehicle: Scooter": {
+   "coef": -13.75,
+   "lo": -14.41,
+   "hi": -13.08,
+   "p": 0.0
+  },
+  "Vehicle: Van": {
+   "coef": -14.23,
+   "lo": -15.39,
+   "hi": -13.07,
+   "p": 3.870780825421021e-126
+  },
+  "Area: Other": {
+   "coef": -12.74,
+   "lo": -14.68,
+   "hi": -10.8,
+   "p": 6.842338923303338e-38
+  },
+  "Area: Semi-Urban": {
+   "coef": 68.47,
+   "lo": 63.19,
+   "hi": 73.75,
+   "p": 2.4291908666815004e-141
+  },
+  "Area: Urban": {
+   "coef": -10.29,
+   "lo": -11.04,
+   "hi": -9.54,
+   "p": 1.9176724308222926e-157
+  },
+  "Day type: Evening-only": {
+   "coef": 25.85,
+   "lo": 24.69,
+   "hi": 27.01,
+   "p": 0.0
+  },
+  "distance_km": {
+   "coef": -0.2,
+   "lo": -0.31,
+   "hi": -0.1,
+   "p": 0.00017957706445234666
+  },
+  "Agent_Age": {
+   "coef": 2.04,
+   "lo": 1.99,
+   "hi": 2.1,
+   "p": 0.0
+  },
+  "Agent_Rating": {
+   "coef": -37.55,
+   "lo": -38.55,
+   "hi": -36.55,
+   "p": 0.0
+  },
+  "is_grocery": {
+   "coef": -105.07,
+   "lo": -106.35,
+   "hi": -103.78,
+   "p": 0.0
+  }
+ },
+ "ols_r2": 0.633,
+ "ols_adj_r2": 0.633,
+ "ols_rmse": 31.5,
+ "late_orders": 11259,
+ "late_share": {
+  "Traffic": {
+   "Low": 9.2,
+   "Medium": 26.5,
+   "High": 11.0,
+   "Jam": 53.2
+  },
+  "Area": {
+   "Metropolitan": 83.5,
+   "Urban": 14.0,
+   "Other": 1.4,
+   "Semi-Urban": 1.2
+  },
+  "Vehicle": {
+   "Motorcycle": 66.4,
+   "Scooter": 27.4,
+   "Van": 6.2
+  }
+ },
+ "order_share": {
+  "Traffic": {
+   "Low": 34.3,
+   "Medium": 24.4,
+   "High": 9.8,
+   "Jam": 31.5
+  },
+  "Vehicle": {
+   "Motorcycle": 58.7,
+   "Scooter": 33.4,
+   "Van": 8.0
+  }
+ },
+ "jam_peak_late_share": 64.2,
+ "cost_by_traffic": {
+  "Low": 178.5,
+  "Medium": 226.3,
+  "High": 208.3,
+  "Jam": 260.8
+ },
+ "cost_by_vehicle": {
+  "Motorcycle": 225.7,
+  "Scooter": 199.3,
+  "Van": 251.9
+ },
+ "cost_by_category_grocery": {
+  "grocery": 70.8,
+  "other": 228.6
+ },
+ "cost_components": {
+  "rider": 187.6,
+  "vehicle": 31.4
+ },
+ "cost_per_km_all": 22.5,
+ "scenarios": {
+  "motorcycle_like_scooter": {
+   "gap_min": 14.5,
+   "orders": 23555,
+   "minutes_saved": 341655,
+   "rider_hours": 5694,
+   "rs_saved": 512482
+  },
+  "jam_like_high": {
+   "gap_min": 18.4,
+   "orders": 12657,
+   "minutes_saved": 233235,
+   "rider_hours": 3887,
+   "rs_saved": 349853
+  },
+  "semi_urban_like_metro": {
+   "gap_min": 108.9,
+   "orders": 138,
+   "minutes_saved": 15025,
+   "rider_hours": 250,
+   "rs_saved": 22537
+  },
+  "low_rated_like_good": {
+   "gap_min": 58.6,
+   "orders": 2073,
+   "minutes_saved": 121448,
+   "rider_hours": 2024,
+   "rs_saved": 182173
+  }
+ },
+ "total_rider_minutes": 5022225
+}

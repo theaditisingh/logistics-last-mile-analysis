@@ -1,0 +1,5 @@
+part_of_day,orders,avg_time,median_time,on_time_pct,avg_cost,avg_distance
+Afternoon,3698,122.1,125.0,75.1,202.4,5.9
+Evening,29003,131.5,130.0,66.6,236.0,12.0
+Morning,7057,101.3,100.0,91.2,159.3,2.3
+Night,395,102.9,100.0,92.2,192.2,11.5

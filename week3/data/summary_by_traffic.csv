@@ -1,0 +1,5 @@
+Traffic,orders,avg_time,median_time,on_time_pct,avg_cost,avg_distance
+Low,13758,101.4,100.0,92.4,178.5,8.1
+Medium,9788,127.0,130.0,69.5,226.3,11.1
+High,3950,129.5,135.0,68.6,208.3,4.4
+Jam,12657,147.9,150.0,52.7,260.8,12.0

@@ -1,0 +1,5 @@
+Area,orders,avg_time,median_time,on_time_pct,avg_cost,avg_distance
+Metropolitan,30063,129.8,130.0,68.7,226.8,9.9
+Other,1051,104.5,100.0,85.3,185.8,9.2
+Semi-Urban,138,238.7,245.0,5.1,397.4,12.8
+Urban,8901,109.7,105.0,82.4,193.8,9.1

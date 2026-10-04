@@ -1,0 +1,4 @@
+Vehicle,orders,avg_time,median_time,on_time_pct,avg_cost,avg_distance
+Motorcycle,23555,131.1,130.0,68.3,225.7,9.7
+Scooter,13404,116.6,115.0,77.0,199.3,9.8
+Van,3194,116.1,115.0,78.0,251.9,9.7
