@@ -1,0 +1,315 @@
+{
+ "n": {
+  "rows": 40153,
+  "train": 32123,
+  "test": 8030,
+  "temporal_train": 28742,
+  "temporal_test": 11411,
+  "temporal_test_days": 12,
+  "cutoff": "2022-03-25"
+ },
+ "baseline": {
+  "MAE": 41.77,
+  "RMSE": 52.13,
+  "R2": -0.0
+ },
+ "comparison": [
+  {
+   "Model": "Linear Regression",
+   "CV_R2": 0.61,
+   "CV_R2_std": 0.007,
+   "CV_RMSE": 32.395,
+   "CV_MAE": 25.697,
+   "Test_MAE": 25.635,
+   "Test_RMSE": 32.297,
+   "Test_R2": 0.616,
+   "Time_RMSE": 32.245,
+   "Time_R2": 0.615
+  },
+  {
+   "Model": "Ridge Regression",
+   "CV_R2": 0.61,
+   "CV_R2_std": 0.007,
+   "CV_RMSE": 32.395,
+   "CV_MAE": 25.698,
+   "Test_MAE": 25.635,
+   "Test_RMSE": 32.297,
+   "Test_R2": 0.616,
+   "Time_RMSE": 32.245,
+   "Time_R2": 0.615
+  },
+  {
+   "Model": "Decision Tree",
+   "CV_R2": 0.773,
+   "CV_R2_std": 0.004,
+   "CV_RMSE": 24.71,
+   "CV_MAE": 18.976,
+   "Test_MAE": 18.927,
+   "Test_RMSE": 24.639,
+   "Test_R2": 0.777,
+   "Time_RMSE": 24.563,
+   "Time_R2": 0.777
+  },
+  {
+   "Model": "Random Forest",
+   "CV_R2": 0.813,
+   "CV_R2_std": 0.003,
+   "CV_RMSE": 22.405,
+   "CV_MAE": 17.393,
+   "Test_MAE": 17.301,
+   "Test_RMSE": 22.173,
+   "Test_R2": 0.819,
+   "Time_RMSE": 22.355,
+   "Time_R2": 0.815
+  },
+  {
+   "Model": "Gradient Boosting",
+   "CV_R2": 0.815,
+   "CV_R2_std": 0.004,
+   "CV_RMSE": 22.33,
+   "CV_MAE": 17.416,
+   "Test_MAE": 17.409,
+   "Test_RMSE": 22.213,
+   "Test_R2": 0.818,
+   "Time_RMSE": 22.35,
+   "Time_R2": 0.815
+  },
+  {
+   "Model": "Tuned Gradient Boosting",
+   "CV_R2": 0.817,
+   "CV_R2_std": 0.003,
+   "CV_RMSE": 22.199,
+   "CV_MAE": 17.291,
+   "Test_MAE": 17.256,
+   "Test_RMSE": 22.042,
+   "Test_R2": 0.821,
+   "Time_RMSE": 22.165,
+   "Time_R2": 0.818
+  },
+  {
+   "Model": "Tuned Random Forest",
+   "CV_R2": 0.811,
+   "CV_R2_std": 0.004,
+   "CV_RMSE": 22.522,
+   "CV_MAE": 17.422,
+   "Test_MAE": 17.316,
+   "Test_RMSE": 22.273,
+   "Test_R2": 0.817,
+   "Time_RMSE": 22.433,
+   "Time_R2": 0.814
+  }
+ ],
+ "tuning": {
+  "seconds": 89,
+  "gb_best": {
+   "l2_regularization": 0.0,
+   "learning_rate": 0.1,
+   "max_leaf_nodes": 63,
+   "min_samples_leaf": 20
+  },
+  "gb_cv_rmse_3fold": 22.242,
+  "gb_combinations": 24,
+  "rf_best": {
+   "max_depth": 18,
+   "min_samples_leaf": 5
+  },
+  "rf_cv_rmse_3fold": 22.558,
+  "rf_combinations": 4
+ },
+ "best_model": "Tuned Gradient Boosting",
+ "final_A": {
+  "MAE": 17.26,
+  "RMSE": 22.04,
+  "R2": 0.821,
+  "temporal_RMSE": 22.16,
+  "temporal_R2": 0.818,
+  "temporal_MAE": 17.31
+ },
+ "final_B": {
+  "MAE": 17.26,
+  "RMSE": 22.04,
+  "R2": 0.821,
+  "cv_rmse": 22.211,
+  "cv_r2": 0.817,
+  "temporal_RMSE": 22.19,
+  "temporal_R2": 0.818,
+  "temporal_MAE": 17.31
+ },
+ "ols_week3": {
+  "MAE": 24.9,
+  "RMSE": 31.39,
+  "R2": 0.637
+ },
+ "final_uses_day_type": false,
+ "final": {
+  "MAE": 17.26,
+  "RMSE": 22.04,
+  "R2": 0.821,
+  "temporal_RMSE": 22.16,
+  "temporal_R2": 0.818,
+  "temporal_MAE": 17.31
+ },
+ "residual": {
+  "mean": -0.11,
+  "std": 22.04,
+  "within_10": 37.0,
+  "within_15": 51.7,
+  "within_30": 83.6
+ },
+ "mae_by_traffic": {
+  "Low": 14.7,
+  "Medium": 17.4,
+  "High": 18.5,
+  "Jam": 19.5
+ },
+ "mae_by_grocery": {
+  "grocery": 4.3,
+  "other": 18.1
+ },
+ "mae_by_area": {
+  "Metropolitan": 17.3,
+  "Other": 15.7,
+  "Semi-Urban": 17.5,
+  "Urban": 17.3
+ },
+ "bias_by_traffic": {
+  "Low": -0.6,
+  "Medium": 0.0,
+  "High": -0.8,
+  "Jam": 0.5
+ },
+ "features_used": [
+  "distance_km",
+  "Traffic_code",
+  "is_grocery",
+  "Agent_Age",
+  "Agent_Rating",
+  "hour",
+  "prep_minutes",
+  "is_weekend",
+  "Weather",
+  "Vehicle",
+  "Area"
+ ],
+ "importance": {
+  "is_grocery": 0.5224,
+  "Weather": 0.2961,
+  "Traffic_code": 0.2766,
+  "distance_km": 0.2684,
+  "Agent_Rating": 0.25,
+  "Agent_Age": 0.1808,
+  "Vehicle": 0.0412,
+  "Area": 0.0111,
+  "hour": 0.0005,
+  "prep_minutes": 0.0,
+  "is_weekend": 0.0
+ },
+ "early_warning": {
+  "threshold": 156,
+  "late_orders": 2299,
+  "flagged": 2080,
+  "caught": 1895,
+  "false_alarms": 185,
+  "missed": 404,
+  "recall": 82.4,
+  "precision": 91.1,
+  "auc": 0.971,
+  "base_rate": 28.6
+ },
+ "promise_curve": [
+  {
+   "q": 0.5,
+   "buffer": -0.9,
+   "on_time": 49.8,
+   "avg_promise": 124.4
+  },
+  {
+   "q": 0.6,
+   "buffer": 4.3,
+   "on_time": 59.6,
+   "avg_promise": 129.6
+  },
+  {
+   "q": 0.7,
+   "buffer": 10.3,
+   "on_time": 69.9,
+   "avg_promise": 135.6
+  },
+  {
+   "q": 0.8,
+   "buffer": 17.8,
+   "on_time": 79.9,
+   "avg_promise": 143.1
+  },
+  {
+   "q": 0.85,
+   "buffer": 22.4,
+   "on_time": 85.1,
+   "avg_promise": 147.7
+  },
+  {
+   "q": 0.9,
+   "buffer": 28.4,
+   "on_time": 90.4,
+   "avg_promise": 153.8
+  },
+  {
+   "q": 0.95,
+   "buffer": 36.6,
+   "on_time": 95.3,
+   "avg_promise": 162.0
+  }
+ ],
+ "promise": {
+  "buffer": 28.4,
+  "dynamic_on_time": 90.4,
+  "avg_promise": 153.8,
+  "fixed_on_time": 71.4,
+  "min_promise": 44.5,
+  "max_promise": 302.2
+ },
+ "promise_by_traffic": {
+  "High": {
+   "fixed": 67.6,
+   "dynamic": 89.5,
+   "promise": 158.2
+  },
+  "Jam": {
+   "fixed": 51.8,
+   "dynamic": 86.9,
+   "promise": 175.9
+  },
+  "Low": {
+   "fixed": 92.5,
+   "dynamic": 94.1,
+   "promise": 130.6
+  },
+  "Medium": {
+   "fixed": 68.9,
+   "dynamic": 90.2,
+   "promise": 155.5
+  }
+ },
+ "promise_by_grocery": {
+  "other": {
+   "fixed": 69.5,
+   "dynamic": 89.8,
+   "promise": 160.2
+  },
+  "grocery": {
+   "fixed": 100.0,
+   "dynamic": 100.0,
+   "promise": 55.7
+  }
+ },
+ "promise_segment": {
+  "on_time": 90.3,
+  "avg_promise": 154.1,
+  "buffers": {
+   "High": 29.8,
+   "Jam": 32.8,
+   "Low": 24.0,
+   "Medium": 29.7
+  }
+ }
+}

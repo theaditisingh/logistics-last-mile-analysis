@@ -1,0 +1,12 @@
+,0
+is_grocery,0.5224
+Weather,0.2961
+Traffic_code,0.2766
+distance_km,0.2684
+Agent_Rating,0.25
+Agent_Age,0.1808
+Vehicle,0.0412
+Area,0.0111
+hour,0.0005
+prep_minutes,0.0
+is_weekend,0.0

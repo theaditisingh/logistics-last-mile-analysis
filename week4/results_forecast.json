@@ -1,0 +1,224 @@
+{
+ "alternation_in_observation_order": {
+  "pairs": 43,
+  "alternating": 43
+ },
+ "series": {
+  "observed_days": 36,
+  "first": "2022-03-01",
+  "last": "2022-04-06",
+  "missing_inside": 1,
+  "mean": 954.8,
+  "min": 850,
+  "max": 1067,
+  "all_day_mean": 1034.7,
+  "evening_mean": 874.8,
+  "all_day_std": 16.0,
+  "evening_std": 13.5
+ },
+ "onestep": {
+  "Mean": {
+   "MAE": 85.7,
+   "RMSE": 86.9,
+   "MAPE": 9.1
+  },
+  "Naive (yesterday)": {
+   "MAE": 167.9,
+   "RMSE": 169.2,
+   "MAPE": 17.8
+  },
+  "Weekly seasonal naive (lag 7)": {
+   "MAE": 161.2,
+   "RMSE": 161.9,
+   "MAPE": 17.1
+  },
+  "7-day moving average": {
+   "MAE": 95.8,
+   "RMSE": 96.8,
+   "MAPE": 10.1
+  },
+  "Seasonal naive (lag 2)": {
+   "MAE": 13.9,
+   "RMSE": 17.7,
+   "MAPE": 1.5
+  },
+  "Same-type average (last 3)": {
+   "MAE": 14.2,
+   "RMSE": 17.1,
+   "MAPE": 1.5
+  },
+  "Same-type average (all)": {
+   "MAE": 13.2,
+   "RMSE": 15.4,
+   "MAPE": 1.4
+  },
+  "Holt-Winters (period 2)": {
+   "MAE": 13.2,
+   "RMSE": 15.4,
+   "MAPE": 1.4
+  },
+  "Regression + AR(1) errors (day type)": {
+   "MAE": 15.0,
+   "RMSE": 18.0,
+   "MAPE": 1.5
+  }
+ },
+ "onestep_days": 14,
+ "multistep": {
+  "Mean": {
+   "MAE": 86.2,
+   "RMSE": 87.8,
+   "MAPE": 9.2
+  },
+  "Naive (yesterday)": {
+   "MAE": 88.0,
+   "RMSE": 113.2,
+   "MAPE": 8.7
+  },
+  "Weekly seasonal naive (lag 7)": {
+   "MAE": 147.5,
+   "RMSE": 156.8,
+   "MAPE": 15.4
+  },
+  "7-day moving average": {
+   "MAE": 86.2,
+   "RMSE": 88.0,
+   "MAPE": 9.1
+  },
+  "Seasonal naive (lag 2)": {
+   "MAE": 17.5,
+   "RMSE": 21.5,
+   "MAPE": 1.9
+  },
+  "Same-type average (last 3)": {
+   "MAE": 15.2,
+   "RMSE": 16.6,
+   "MAPE": 1.6
+  },
+  "Same-type average (all)": {
+   "MAE": 16.5,
+   "RMSE": 18.4,
+   "MAPE": 1.8
+  },
+  "Holt-Winters (period 2)": {
+   "MAE": 16.5,
+   "RMSE": 18.4,
+   "MAPE": 1.8
+  },
+  "Regression + AR(1) errors (day type)": {
+   "MAE": 17.9,
+   "RMSE": 20.2,
+   "MAPE": 1.9
+  }
+ },
+ "multistep_days": 8,
+ "best_model": "Same-type average (last 3)",
+ "final_model": "Same-type average (last 3 days)",
+ "top_models_rmse_spread": 2.8,
+ "sarimax": {
+  "const": 2026.7,
+  "day_type_effect": -138.6,
+  "ar1": -0.98,
+  "day_type_effect_p": 0.6
+ },
+ "interval_halfwidth_80": 21.5,
+ "in_sample_rmse": 17.1,
+ "ljung_box_p": 0.387,
+ "residual_autocorr_lag1": -0.21,
+ "forecast": [
+  {
+   "date": "2022-04-07",
+   "day_type": "All-day",
+   "forecast_orders": 1042.0,
+   "lower_80": 1020.0,
+   "upper_80": 1064.0
+  },
+  {
+   "date": "2022-04-08",
+   "day_type": "Evening-only",
+   "forecast_orders": 862.0,
+   "lower_80": 841.0,
+   "upper_80": 884.0
+  },
+  {
+   "date": "2022-04-09",
+   "day_type": "All-day",
+   "forecast_orders": 1042.0,
+   "lower_80": 1020.0,
+   "upper_80": 1064.0
+  },
+  {
+   "date": "2022-04-10",
+   "day_type": "Evening-only",
+   "forecast_orders": 862.0,
+   "lower_80": 841.0,
+   "upper_80": 884.0
+  },
+  {
+   "date": "2022-04-11",
+   "day_type": "All-day",
+   "forecast_orders": 1042.0,
+   "lower_80": 1020.0,
+   "upper_80": 1064.0
+  },
+  {
+   "date": "2022-04-12",
+   "day_type": "Evening-only",
+   "forecast_orders": 862.0,
+   "lower_80": 841.0,
+   "upper_80": 884.0
+  },
+  {
+   "date": "2022-04-13",
+   "day_type": "All-day",
+   "forecast_orders": 1042.0,
+   "lower_80": 1020.0,
+   "upper_80": 1064.0
+  }
+ ],
+ "forecast_week_total": 6754,
+ "forecast_types": {
+  "all_day_days": 4,
+  "evening_days": 3
+ },
+ "hourly_share": {
+  "All-day": {
+   "0": 0.0079,
+   "8": 0.0787,
+   "9": 0.0819,
+   "10": 0.0832,
+   "11": 0.082,
+   "12": 0.0387,
+   "13": 0.0332,
+   "14": 0.0333,
+   "15": 0.0367,
+   "16": 0.0296,
+   "17": 0.0695,
+   "18": 0.0721,
+   "19": 0.0704,
+   "20": 0.068,
+   "21": 0.0748,
+   "22": 0.0697,
+   "23": 0.0704
+  },
+  "Evening-only": {
+   "0": 0.0121,
+   "8": 0.0,
+   "9": 0.0,
+   "10": 0.0,
+   "11": 0.0,
+   "12": 0.0,
+   "13": 0.0,
+   "14": 0.0,
+   "15": 0.0,
+   "16": 0.0,
+   "17": 0.1315,
+   "18": 0.1382,
+   "19": 0.1451,
+   "20": 0.1456,
+   "21": 0.1433,
+   "22": 0.1433,
+   "23": 0.1409
+  }
+ }
+}

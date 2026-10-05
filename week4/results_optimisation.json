@@ -1,0 +1,357 @@
+{
+ "assumptions": {
+  "rider_minutes_per_delivery": 30,
+  "utilisation": 0.8,
+  "rider_rs_per_hour": 90.0,
+  "forecast_orders": {
+   "All-day": 1042,
+   "Evening-only": 862
+  },
+  "days": {
+   "All-day": 4,
+   "Evening-only": 3
+  }
+ },
+ "requirements": {
+  "All-day": {
+   "orders_by_hour": {
+    "8": 82.0,
+    "9": 85.4,
+    "10": 86.7,
+    "11": 85.4,
+    "12": 40.3,
+    "13": 34.6,
+    "14": 34.7,
+    "15": 38.3,
+    "16": 30.8,
+    "17": 72.4,
+    "18": 75.1,
+    "19": 73.3,
+    "20": 70.8,
+    "21": 77.9,
+    "22": 72.6,
+    "23": 73.4,
+    "24": 8.2
+   },
+   "riders_by_hour": {
+    "8": 52,
+    "9": 54,
+    "10": 55,
+    "11": 54,
+    "12": 26,
+    "13": 22,
+    "14": 22,
+    "15": 24,
+    "16": 20,
+    "17": 46,
+    "18": 47,
+    "19": 46,
+    "20": 45,
+    "21": 49,
+    "22": 46,
+    "23": 46,
+    "24": 6
+   }
+  },
+  "Evening-only": {
+   "orders_by_hour": {
+    "8": 0.0,
+    "9": 0.0,
+    "10": 0.0,
+    "11": 0.0,
+    "12": 0.0,
+    "13": 0.0,
+    "14": 0.0,
+    "15": 0.0,
+    "16": 0.0,
+    "17": 113.4,
+    "18": 119.1,
+    "19": 125.1,
+    "20": 125.5,
+    "21": 123.5,
+    "22": 123.5,
+    "23": 121.5,
+    "24": 10.5
+   },
+   "riders_by_hour": {
+    "8": 0,
+    "9": 0,
+    "10": 0,
+    "11": 0,
+    "12": 0,
+    "13": 0,
+    "14": 0,
+    "15": 0,
+    "16": 0,
+    "17": 71,
+    "18": 75,
+    "19": 79,
+    "20": 79,
+    "21": 78,
+    "22": 78,
+    "23": 76,
+    "24": 7
+   }
+  }
+ },
+ "schedules": {
+  "type_All-day": {
+   "rider_hours": 688,
+   "shifts": 105,
+   "peak_riders": 55
+  },
+  "type_Evening-only": {
+   "rider_hours": 608,
+   "shifts": 79,
+   "peak_riders": 79
+  },
+  "max": {
+   "rider_hours": 922,
+   "shifts": 134,
+   "peak_riders": 79
+  },
+  "avg": {
+   "rider_hours": 660,
+   "shifts": 94,
+   "peak_riders": 62
+  }
+ },
+ "week": {
+  "one_size_max": {
+   "rider_hours": 6454,
+   "shortfall_rider_hours": 0
+  },
+  "one_size_avg": {
+   "rider_hours": 4620,
+   "shortfall_rider_hours": 892.0
+  },
+  "by_day_type": {
+   "rider_hours": 4576,
+   "shortfall_rider_hours": 0
+  }
+ },
+ "week_savings": {
+  "vs_one_size_max_hours": 1878,
+  "vs_one_size_max_pct": 29.1,
+  "vs_one_size_max_rs": 169020,
+  "avg_shortfall_hours": 892.0,
+  "avg_shortfall_pct_of_need": 20.9,
+  "avg_policy_extra_hours_vs_day_type": 44
+ },
+ "sensitivity": {
+  "20": {
+   "one_size_max": 4326,
+   "by_day_type": 3072,
+   "saving_pct": 29.0,
+   "peak_all_day": 37,
+   "peak_evening": 53
+  },
+  "30": {
+   "one_size_max": 6454,
+   "by_day_type": 4576,
+   "saving_pct": 29.1,
+   "peak_all_day": 55,
+   "peak_evening": 79
+  },
+  "40": {
+   "one_size_max": 8582,
+   "by_day_type": 6094,
+   "saving_pct": 29.0,
+   "peak_all_day": 73,
+   "peak_evening": 105
+  }
+ },
+ "shift_plan": {
+  "All-day": [
+   {
+    "start": 8,
+    "length": 4,
+    "riders": 29
+   },
+   {
+    "start": 9,
+    "length": 4,
+    "riders": 3
+   },
+   {
+    "start": 15,
+    "length": 4,
+    "riders": 1
+   },
+   {
+    "start": 20,
+    "length": 4,
+    "riders": 3
+   },
+   {
+    "start": 8,
+    "length": 6,
+    "riders": 3
+   },
+   {
+    "start": 18,
+    "length": 6,
+    "riders": 1
+   },
+   {
+    "start": 8,
+    "length": 8,
+    "riders": 20
+   },
+   {
+    "start": 14,
+    "length": 8,
+    "riders": 3
+   },
+   {
+    "start": 16,
+    "length": 8,
+    "riders": 16
+   },
+   {
+    "start": 17,
+    "length": 8,
+    "riders": 26
+   }
+  ],
+  "Evening-only": [
+   {
+    "start": 17,
+    "length": 4,
+    "riders": 1
+   },
+   {
+    "start": 17,
+    "length": 6,
+    "riders": 2
+   },
+   {
+    "start": 18,
+    "length": 6,
+    "riders": 4
+   },
+   {
+    "start": 19,
+    "length": 6,
+    "riders": 4
+   },
+   {
+    "start": 16,
+    "length": 8,
+    "riders": 65
+   },
+   {
+    "start": 17,
+    "length": 8,
+    "riders": 3
+   }
+  ]
+ },
+ "vehicle": {
+  "model": "Tuned Gradient Boosting",
+  "orders": 40153,
+  "predicted_total_minutes_current": 5016823,
+  "predicted_total_minutes_optimal": 4953831,
+  "minutes_saved": 62992,
+  "pct_saved": 1.26,
+  "avg_min_saved_per_order": 1.57,
+  "rider_hours_saved": 1050,
+  "rs_saved": 94487,
+  "all_scooter_minutes_saved": 254593,
+  "all_scooter_pct": 5.07,
+  "segments": 11,
+  "fleet_orders": {
+   "Motorcycle": 23555,
+   "Scooter": 13404,
+   "Van": 3194
+  }
+ },
+ "vehicle_gap_by_traffic": {
+  "Low": {
+   "motorcycle_minus_scooter": 6.8,
+   "motorcycle_minus_van": 7.2
+  },
+  "Medium": {
+   "motorcycle_minus_scooter": 12.9,
+   "motorcycle_minus_van": 12.5
+  },
+  "High": {
+   "motorcycle_minus_scooter": 10.0,
+   "motorcycle_minus_van": 10.2
+  },
+  "Jam": {
+   "motorcycle_minus_scooter": 13.9,
+   "motorcycle_minus_van": 14.2
+  }
+ },
+ "vehicle_alloc": [
+  {
+   "traffic": "Low",
+   "orders": 13758,
+   "moto_current_pct": 59.1,
+   "moto_optimal_pct": 100.0,
+   "scooter_van_current_pct": 40.9,
+   "scooter_van_optimal_pct": 0.0
+  },
+  {
+   "traffic": "Medium",
+   "orders": 9788,
+   "moto_current_pct": 58.6,
+   "moto_optimal_pct": 44.6,
+   "scooter_van_current_pct": 41.4,
+   "scooter_van_optimal_pct": 55.4
+  },
+  {
+   "traffic": "High",
+   "orders": 3950,
+   "moto_current_pct": 58.9,
+   "moto_optimal_pct": 100.0,
+   "scooter_van_current_pct": 41.1,
+   "scooter_van_optimal_pct": 0.0
+  },
+  {
+   "traffic": "Jam",
+   "orders": 12657,
+   "moto_current_pct": 58.2,
+   "moto_optimal_pct": 11.7,
+   "scooter_van_current_pct": 41.8,
+   "scooter_van_optimal_pct": 88.3
+  }
+ ],
+ "routing": {
+  "windows": 918,
+  "orders": 9083,
+  "routes": 1944,
+  "capacity": 6,
+  "total_km": {
+   "random_listed": 81851.7,
+   "listed": 82121.6,
+   "sweep_listed": 74786.6,
+   "sweep_opt": 66028.3
+  },
+  "km_per_order": {
+   "random_listed": 9.01,
+   "listed": 9.04,
+   "sweep_listed": 8.23,
+   "sweep_opt": 7.27
+  },
+  "avg_longest_route_km": {
+   "random_listed": 49.3,
+   "listed": 49.6,
+   "sweep_listed": 42.4,
+   "sweep_opt": 36.4
+  },
+  "saving_vs_listed_pct": {
+   "sweep_listed": 8.9,
+   "sweep_opt": 19.6
+  },
+  "saving_vs_random_pct": 19.3,
+  "sequencing_only_pct": 11.7,
+  "km_saved": 16093.3,
+  "rs_saved_at_3_per_km": 48280,
+  "avg_orders_per_window": 9.9,
+  "max_orders_per_window": 19,
+  "share_of_all_orders_pct": 22.6,
+  "windows_improved_pct": 97.5
+ }
+}
